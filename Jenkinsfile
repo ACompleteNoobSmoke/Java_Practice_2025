@@ -1,7 +1,7 @@
 /* Jenkinsfile (Declarative Pipeline)
 Requires the Docker Pipeline plugin */
 pipeline {
-    agent { snone }
+    agent { none }
     stages {
         stage('build') {
             steps {

@@ -12,7 +12,13 @@ public class VideoGame {
         this.console = console;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
+    public Consoles getConsole() {
+        return console;
+    }
 
     @Override
     public String toString() {

@@ -36,7 +36,7 @@ public class ConnectionSingleton {
     }
 
     private static Connection getConnection(String sqlName){
-        String url = "jdbc:mysql://sql_test:3306/" + sqlName + "?useSSL=false&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://sql_test/" + sqlName + "?useSSL=false&allowPublicKeyRetrieval=true";
         String username = System.getenv("MYSQL_USER");
         String password = System.getenv("MYSQL_PASS");
         System.out.println("Username: " + username);

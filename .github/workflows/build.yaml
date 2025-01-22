@@ -46,7 +46,7 @@ jobs:
 
       - name: Build and push
         uses: docker/build-push-action@v5
-          with:
+        with:
             context: .
             push: true
             tags: acompletenoobsmoke/javapractice:latest

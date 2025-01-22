@@ -10,7 +10,7 @@ public class CustomerRepo {
     private final Connection customerConnection;
 
     public CustomerRepo() throws ClassNotFoundException {
-        this.customerConnection = ConnectionSingleton.getConnectionSingleton("schema");
+        this.customerConnection = ConnectionSingleton.getConnectionSingleton("test");
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {

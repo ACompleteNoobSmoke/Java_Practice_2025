@@ -22,7 +22,7 @@ jobs:
 
       - name: Make Dockerfile
         run: |
-          echo ${secrets.DOCKERFILE} >> Dockerfile
+          echo ${{secrets.DOCKERFILE}} >> Dockerfile
 
       - name: Build Code
         run: mvn clean install

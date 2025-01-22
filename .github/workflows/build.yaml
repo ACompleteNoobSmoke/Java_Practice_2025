@@ -20,9 +20,9 @@ jobs:
             java-version: '21'
             distribution: 'zulu'
 
-      - name: Make Dockerfile
-        run: |
-          echo "${{secrets.DOCKERFILE}}" >> Dockerfile
+#      - name: Make Dockerfile
+#        run: |
+#          echo "${{secrets.DOCKERFILE}}" >> Dockerfile
 
       - name: Build Code
         run: mvn clean install

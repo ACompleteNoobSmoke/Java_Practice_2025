@@ -10,9 +10,9 @@ services:
     networks:
     - sql_network_new
     depends_on:
-     - mysql-service
+     - mysqlcontainer
 
-  mysql-service:
+  mysqlcontainer:
     image: mysql:latest
     container_name: uyi_sql_practice
     ports:

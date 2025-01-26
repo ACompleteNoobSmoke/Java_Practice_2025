@@ -77,6 +77,7 @@ public class ConnectionSingleton {
         String url = "jdbc:mysql://" + singleton.DB_HOST + ":" + singleton.DB_PORT + "/" + sqlName + "?useSSL=false&serverTimezone=Asia/Shanghai";
         System.out.println("Username: " + singleton.DB_USER);
         System.out.println("Password: " + singleton.DB_PASSWORD);
+        System.out.println("Something new before");
 
 
         try  {

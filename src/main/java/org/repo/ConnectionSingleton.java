@@ -80,6 +80,7 @@ public class ConnectionSingleton {
 
 
         try  {
+            System.out.println("Something new");
             System.out.println("Connecting to database...");
             return DriverManager.getConnection(url, singleton.DB_USER, singleton.DB_PASSWORD);
         } catch (SQLException e) {

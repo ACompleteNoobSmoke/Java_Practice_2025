@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   java:
-    image: acompletenoobsmoke/javapractice
+    image: acompletenoobsmoke/javapractice:latest
     container_name: uyi_java_practice
     environment:
       - MYSQL_HOST=mysql-service

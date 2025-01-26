@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  java:
+    image: acompletenoobsmoke/javapractice
+    container_name: uyi_java_practice
+    environment:
+      - MYSQL_HOST=mysql-service
+      - MYSQL_PORT=3308
+    networks:
+    - sql_network_new
+    depends_on:
+     - mysql-service
+
+  mysql-service:
+    image: mysql:latest
+    container_name: uyi_sql_practice
+    ports:
+      - 3308:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=test
+    networks:
+      - sql_network_new
+
+networks:
+  sql_network_new:
+    name: sql_network_ssj
+

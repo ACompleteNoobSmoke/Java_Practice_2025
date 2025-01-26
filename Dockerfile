@@ -1,4 +1,4 @@
-FROM openjdk:24-ea-21-slim
+FROM openjdk:24-ea-21
 
 ENV MYSQL_USER "root"
 

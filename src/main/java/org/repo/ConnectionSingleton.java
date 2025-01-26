@@ -81,11 +81,14 @@ public class ConnectionSingleton {
 
 
         try  {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Something new");
             System.out.println("Connecting to database...");
             return DriverManager.getConnection(url, singleton.DB_USER, singleton.DB_PASSWORD);
         } catch (SQLException e) {
             throw new IllegalStateException("Cannot connect to database!", e);
+        } catch (ClassNotFoundException e) {
+            throw new IllegalStateException("Cannot Find Driver Class!", e);
         }
     }
 }

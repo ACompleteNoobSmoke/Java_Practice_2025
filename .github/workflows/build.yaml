@@ -3,7 +3,7 @@ name: Build
 run-name: Building -- ${{github.head_ref || github.ref_name }}
 
 on:
-#  push:
+  push:
   workflow_dispatch:
 
 jobs:
